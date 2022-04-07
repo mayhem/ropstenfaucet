@@ -42,7 +42,7 @@ if (!nonce) {
 
 nonce+=1;
 
-const amount = 1n * 10n**18n;
+const amount = Web3.utils.toWei(process.env.SEND_AMOUNT, 'ether');
 
 const tx = {
   from: sponsor.address,

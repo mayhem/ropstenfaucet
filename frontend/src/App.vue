@@ -96,12 +96,12 @@ export default {
   },
 
   setup() {
-    window.urlPrefix = import.meta.env.PROD ? import.meta.env.PROD_URL : 'http://localhost:3090';
+    window.urlPrefix = "https://api.deepstupid.com"; //import.meta.env.PROD ? import.meta.env.PROD_URL : 'http://localhost:3090';
   },
 
   data() {
     return {
-      urlPrefix: import.meta.env.PROD ? import.meta.env.PROD_URL : 'http://localhost:3090',
+      urlPrefix: "https://api.deepstupid.com", //import.meta.env.PROD ? import.meta.env.PROD_URL : 'http://localhost:3090',
 
       isStatsLoading: true,
       balance: 0,

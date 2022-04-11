@@ -325,6 +325,10 @@ const fastify = Fastify({
   logger: !isProduction
 });
 
+fastify.register(require('fastify-static'), {
+  root: path.join(__dirname, '../frontend-dist')
+})
+
 fastify.register(FastifyCors, {
 });
 
